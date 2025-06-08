@@ -1,0 +1,84 @@
+{% extends "layout.html" %}
+{% load static %}
+{% block title %}
+    {{ school_abv }} Alumni Dashboard | Home
+{% endblock %}
+
+{% block content %}
+
+<style> 
+    body {
+        background: url('{% static "images/dashboard_BG_Shape.png" %}') no-repeat center center fixed;
+        background-size: cover;
+        text-align: center;
+        font-family: Arial, sans-serif;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+</style>
+
+
+<div class="container text-center" >
+    <div class="row align-items-center">
+        <div class="col-lg-6 col-md-8 col-sm-12">
+            <div class="menu-box">
+                <div class="row">
+                    <div class="col-6">
+                        <button class="btn btn-outline-danger btn-custom" onclick="window.location.href='{% url 'careers' %}'">
+                            <i class="fas fa-briefcase"></i> CAREERS 
+                        </button>
+                    </div>
+                    <div class="col-6">
+                        <button class="btn btn-outline-danger btn-custom" onclick="window.location.href='{% url 'events' %}'">
+                            <i class="fas fa-calendar-alt"></i> EVENTS 
+                        </button>
+                    </div>
+                    <div class="col-6">
+                        <button class="btn btn-outline-danger btn-custom" onclick="window.location.href='{% url 'articles' %}'">
+                            <i class="fas fa-newspaper"></i> ARTICLES 
+                        </button>
+                    </div>
+                    <div class="col-6">
+                        <button class="btn btn-outline-danger btn-custom" onclick="window.location.href='services.html'">
+                            <i class="fa-solid fa-users"></i> ALUMNI NETWORK
+                        </button>
+                    </div>
+                    <div class="col-6">
+                        <button class="btn btn-outline-danger btn-custom" onclick="window.location.href='{% url 'stories' %}'">
+                            <i class="fas fa-graduation-cap"></i> STORIES  
+                        </button>
+                    </div>
+                    <div class="col-6">
+                        <button class="btn btn-outline-danger btn-custom" onclick="window.location.href='{% url 'about' %}'">
+                            <i class="fa-solid fa-circle-info"></i> ABOUT
+                        </button>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-6 col-md-4 col-sm-12 text-center mt-4">
+            <div class="logo-container">
+                <img src={% static "images/dashboard_PUPLogo.png" %} alt="University Logo" class="img-fluid">   
+            </div>
+        </div>
+    </div>
+
+        <!-- Bottom Right Corner Text -->
+        <div class="footer bottom-right">
+            <a>POLYTECHNIC UNIVERSITY OF THE PHILIPPINES</a><br>
+            <span>ALUMNI RELATIONS & CAREER DEVELOPMENT OFFICE</span>
+        </div>
+    
+</div>
+
+
+<script src="{% static 'js/dashboard.js' %}"></script>
+<link href="{% static 'css/dashboard.css' %}" rel="stylesheet" type="text/css">
+
+{% endblock %}

@@ -1,0 +1,74 @@
+{% extends "layout.html" %}
+{% load static %}
+{% block title %}
+    {{ school_abv }} 
+{% endblock %}
+
+{% block content %}
+
+<div class="header">
+    ALUMNI STORIES
+</div>
+
+<!-- Filter Section -->
+<div class="container filter-section">
+    <div class="row">
+        <div class="col-md-4">
+            <label for="courseFilter" class="form-label">Filter Stories</label>
+            <select class="form-select" id="courseFilter">
+                <option value="all" selected>All Course</option>
+                <option value="engineering">Engineering</option>
+                <option value="business">Business</option>
+                <option value="arts">Arts</option>
+            </select>
+        </div>
+        <div class="col-md-4">
+            <label for="monthFilter" class="form-label">Month</label>
+            <select class="form-select" id="monthFilter">
+                <option value="all" selected>All</option>
+                <option value="january">January</option>
+                <option value="february">February</option>
+                <option value="march">March</option>
+            </select>
+        </div>
+        <div class="col-md-4">
+            <label for="yearFilter" class="form-label">Year</label>
+                <select class="form-select" id="yearFilter">
+                <option value="all" selected>All</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+            </select>
+        </div>
+    </div>
+</div>
+
+<!-- Alumni Stories Grid -->
+<div class="container">
+    <div class="row d-flex flex-wrap" id="stories-container">
+        <!-- Dynamic stories will be added here -->
+    </div>
+</div>
+
+        <!-- Assistive Touch -->
+<div class="dropdown">
+    <div class="assistive-touch user-select-none" id="assistiveTouch" data-bs-toggle="dropdown" aria-expanded="false">
+        &#9881;
+    </div>
+    <ul class="dropdown-menu dropdown-menu-end">
+        <li><a class="dropdown-item" href="/">Home</a></li>
+        <li><a class="dropdown-item" href="{% url 'careers' %}">Careers</a></li>
+        <li><a class="dropdown-item" href="{% url 'events' %}">Events</a></li>          
+        <li><a class="dropdown-item" href="{% url 'articles' %}">Articles</a></li>
+        <li><a class="dropdown-item" href="services.html">Services</a></li>
+        <li><a class="dropdown-item" href="{% url 'stories' %}">Stories</a></li>
+        <li><a class="dropdown-item" href="{% url 'about' %}">About</a></li>
+        
+    </ul>
+</div>
+
+    <script src="{% static 'js/stories.js' %}"></script>
+    <link href="{% static 'css/stories.css' %}" rel="stylesheet" type="text/css">
+
+
+    {% endblock %}

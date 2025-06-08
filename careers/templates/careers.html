@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+{% load static %}
+{% block title %}
+    {{ school_abv }} 
+{% endblock %}
+
+{% block content %}
+<div class="header">CAREERS</div>
+<div class="container my-4">
+
+    <div class="row">
+        <div class="jobListings col-md-4" id="jobListings"></div>
+        <div class="col-md-8">
+            <div class="job-details" id="jobDetails">
+                <h4 class="text-danger fw-bold">Select a job to view details</h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="dropdown">
+    <div class="assistive-touch user-select-none" id="assistiveTouch" data-bs-toggle="dropdown" aria-expanded="false">
+        &#9881;
+    </div>
+    <ul class="dropdown-menu dropdown-menu-end">
+        <li><a class="dropdown-item" href="/">Home</a></li>
+        <li><a class="dropdown-item" href="{% url 'careers' %}">Careers</a></li>
+        <li><a class="dropdown-item" href="{% url 'events' %}">Events</a></li>          
+        <li><a class="dropdown-item" href="{% url 'articles' %}">Articles</a></li>
+        <li><a class="dropdown-item" href="services.html">Services</a></li>
+        <li><a class="dropdown-item" href="{% url 'stories' %}">Stories</a></li>
+        <li><a class="dropdown-item" href="{% url 'about' %}">About</a></li>
+        
+    </ul>
+</div>
+
+<script src="{% static 'js/careers.js' %}"></script>
+<link href="{% static 'css/careers.css' %}" rel="stylesheet" type="text/css">
+
+{% endblock %}

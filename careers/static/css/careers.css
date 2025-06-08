@@ -1,0 +1,73 @@
+.header {
+    background-color: #8B0000;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+}
+
+.header::after {
+    content: "";
+    width: 50px;
+    height: 4px;
+    background-color: gold;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.job-listing {
+    border: 1px solid #ddd;
+    padding: 15px;
+    background: white;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;    
+}
+
+.jobListings {
+    max-height: 85vh; /* restrict height */
+    overflow-y: scroll; /* enable vertical scroll */
+    cursor: pointer;
+}
+
+
+.job-listing:hover {
+    background-color: #f1f1f1;
+}
+.job-details {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.assistive-touch {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #7d0d0d;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 1050; /* Ensures it's above other elements */
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+}
+
+/* Hover effect for better UX */
+.assistive-touch:hover {
+    background-color: #a00d0d;
+    transform: scale(1.1);
+}
+
+.dropdown-menu { min-width: 120px; }
