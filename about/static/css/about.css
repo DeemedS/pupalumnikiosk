@@ -1,0 +1,198 @@
+    /* Header bar styling */
+    .header {
+        background-color: #8B0000; /* Deep red background */
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+        position: relative;
+      }
+  
+      /* Decorative line under header text */
+      .header::after {
+        content: "";
+        width: 50px;
+        height: 4px;
+        background-color: gold;
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+  
+      /* Mission section: maroon background, white text */
+      .section-mission {
+        background-color: #7a0000;
+        color: white;
+        padding: 1rem;
+      }
+  
+      /* Vision and Core Values section: dark background, white text */
+      .section-vision, .section-core {
+        background-color: #2f2f2b;
+        color: white;
+        padding: 1rem;
+      }
+  
+      /* Function section: maroon text */
+      .section-function {
+        color: #7a0000;
+        padding: 1rem;
+      }
+  
+      /* Section title styling */
+      h2.section-title {
+        font-weight: 700;
+        font-size: 0.875rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        margin-bottom: 0;
+        flex-shrink: 0;
+        width: 160px;
+      }
+  
+      /* Default paragraph and list styling */
+      p, ul {
+        font-size: 0.875rem;
+        line-height: 1.5;
+        margin-bottom: 0;
+      }
+  
+      /* Function list padding */
+      ul.function-list {
+        padding-left: 1.25rem;
+        margin-bottom: 0;
+      }
+  
+      /* Spacing between list items */
+      ul.function-list li {
+        margin-bottom: 0.5rem;
+      }
+  
+      /* Top section: border and padding */
+      .section-top {
+        border-bottom: 1px solid #7a0000;
+        padding: 1.5rem 1rem;
+      }
+  
+      /* Bottom borders for content separation */
+      .section-mission, .section-function {
+        border-bottom: 1px solid #7a0000;
+      }
+  
+      .section-vision, .section-core {
+        border-bottom: 1px solid #2f2f2b;
+      }
+  
+      /* Logo image styling: fixed size, rounded corners */
+      img.img-fluid {
+        max-width: 150px;
+        height: auto;
+        border-radius: 50%;
+        
+      }
+  
+      .org img {
+          width: 200px; /* Or any consistent size */
+          height: auto;
+          object-fit: cover;
+          border-radius: 25%;
+          object-position: top;
+          border: #2D2926 3px solid;
+          padding: 0;
+      }
+  
+      .underline {
+          width: 80px;
+          height: 4px;
+          background-color: gold;; /* or whatever accent color you use */
+          margin: 0 auto;
+      }
+  
+      .org .row {
+          justify-content: center;
+      }
+  
+      .org .col-md-3,
+      .org .col-md-4,
+      .org .col-md-6,
+      .org .col-md-12 {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+      }
+  
+  
+  
+  
+      /* Responsive adjustments for medium screens and up */
+      @media (min-width: 768px) {
+        .section-top {
+          padding: 2rem;
+        }
+  
+        .section-mission, .section-vision, .section-function, .section-core {
+          padding: 1.5rem 2rem;
+        }
+  
+        p, ul {
+          font-size: 1rem;
+          line-height: 1.6;
+        }
+  
+        ul.function-list li {
+          margin-bottom: 0.4rem;
+        }
+      }
+  
+      .assistive-touch {
+              position: fixed;
+              bottom: 20px;
+              right: 20px;
+              background-color: #7d0d0d;
+              color: white;
+              border-radius: 50%;
+              width: 60px;
+              height: 60px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+              cursor: pointer;
+              font-size: 24px;
+              z-index: 1050; /* Ensures it's above other elements */
+              transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+          }
+  
+          /* Hover effect for better UX */
+          .assistive-touch:hover {
+              background-color: #a00d0d;
+              transform: scale(1.1);
+          }
+  
+          .dropdown-menu { min-width: 120px; }
+  
+          /* Adjust size on smaller screens */
+          @media (max-width: 768px) {
+              .assistive-touch {
+                  width: 50px;
+                  height: 50px;
+                  font-size: 20px;
+                  bottom: 15px;
+                  right: 15px;
+              }
+          }
+  
+          /* Further adjustments for very small screens */
+          @media (max-width: 480px) {
+              .assistive-touch {
+                  width: 45px;
+                  height: 45px;
+                  font-size: 18px;
+                  bottom: 10px;
+                  right: 10px;
+              }
+          }
+  
