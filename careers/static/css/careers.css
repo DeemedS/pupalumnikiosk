@@ -71,3 +71,12 @@
 }
 
 .dropdown-menu { min-width: 120px; }
+
+.job-desc {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Show 3 lines, then ellipsis */
+    line-clamp: 3; /* Standard property for compatibility */
+    -webkit-box-orient: vertical;
+}
