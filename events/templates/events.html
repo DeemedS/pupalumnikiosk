@@ -26,218 +26,28 @@
         <div class="row mb-4">
             <div class="col-md-4 mb-3">
                 <label for="filter" class="form-label">Filter Events</label>
-                <select id="filter" class="form-select">
-                    <option>All Events</option>
+                <select id="event-filter" class="form-select" aria-label="Event filter">
+                    <option value="all" selected>All Events</option>
+                    <option value="upcoming" >Upcoming Events</option>
+                    <option value="past">Past Events</option>
                 </select>
             </div>
             <div class="col-md-4 mb-3">
                 <label for="month" class="form-label">Month</label>
-                <select id="month" class="form-select">
+                <select id="month-filter" class="form-select">
                     <option>All</option>
                 </select>
             </div>
             <div class="col-md-4 mb-3">
                 <label for="year" class="form-label">Year</label>
-                <select id="year" class="form-select">
+                <select id="year-filter" class="form-select">
                     <option>All</option>
                 </select>
             </div>
         </div>
     </section>
-    <section class="row">
-        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-            <div class="article-card" data-category="news" data-month="February" data-year="2024">
-                <div class="position-relative">
-                    <img src="blank.jpg" alt="Article image" class="img-fluid rounded mb-3">
-                    <div class="event-badge p-1">UPCOMING EVENT</div> 
-                </div>
-                <h3>TITLE SPACE</h3>
-                <p class="card-text">
-                    <strong>DATE:</strong> <span>JULY 15, 2025</span><br>
-                    <strong>TIME:</strong> <span>9:00AM - 5:00 PM</span><br>
-                    <strong>VENUE:</strong> <span>PUP GYMNASIUM</span>
-                </p>
-                <p>This is a paragraph content section where other things will enter here.</p>
-                <button class="w-100">Read Now</button>
-            </div>
-            
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-            <div class="article-card" data-category="news" data-month="February" data-year="2024">
-                <div class="position-relative">
-                    <img src="blank.jpg" alt="Article image" class="img-fluid rounded mb-3">
-                    <div class="event-badge p-1">UPCOMING EVENT</div> 
-                </div>
-                <h3>TITLE SPACE</h3>
-                <p class="card-text">
-                    <strong>DATE:</strong> <span>JULY 15, 2025</span><br>
-                    <strong>TIME:</strong> <span>9:00AM - 5:00 PM</span><br>
-                    <strong>VENUE:</strong> <span>PUP GYMNASIUM</span>
-                </p>
-                <p>This is a paragraph content section where other things will enter here.</p>
-                <button class="w-100">Read Now</button>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-            <div class="article-card" data-category="news" data-month="February" data-year="2024">
-                <div class="position-relative">
-                    <img src="blank.jpg" alt="Article image" class="img-fluid rounded mb-3">
-                    <div class="event-badge p-1">UPCOMING EVENT</div> 
-                </div>
-                <h3>TITLE SPACE</h3>
-                <p class="card-text">
-                    <strong>DATE:</strong> <span>JULY 15, 2025</span><br>
-                    <strong>TIME:</strong> <span>9:00AM - 5:00 PM</span><br>
-                    <strong>VENUE:</strong> <span>PUP GYMNASIUM</span>
-                </p>
-                <p>This is a paragraph content section where other things will enter here.</p>
-                <button class="w-100">Read Now</button>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-            <div class="article-card" data-category="news" data-month="February" data-year="2024">
-                <div class="position-relative">
-                    <img src="blank.jpg" alt="Article image" class="img-fluid rounded mb-3">
-                    <div class="event-badge p-1">UPCOMING EVENT</div> 
-                </div>
-                <h3>TITLE SPACE</h3>
-                <p class="card-text">
-                    <strong>DATE:</strong> <span>JULY 15, 2025</span><br>
-                    <strong>TIME:</strong> <span>9:00AM - 5:00 PM</span><br>
-                    <strong>VENUE:</strong> <span>PUP GYMNASIUM</span>
-                </p>
-                <p>This is a paragraph content section where other things will enter here.</p>
-                <button class="w-100">Read Now</button>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-            <div class="article-card" data-category="news" data-month="February" data-year="2024">
-                <div class="position-relative">
-                    <img src="blank.jpg" alt="Article image" class="img-fluid rounded mb-3">
-                    <div class="event-badge p-1">UPCOMING EVENT</div> 
-                </div>
-                <h3>TITLE SPACE</h3>
-                <p class="card-text">
-                    <strong>DATE:</strong> <span>JULY 15, 2025</span><br>
-                    <strong>TIME:</strong> <span>9:00AM - 5:00 PM</span><br>
-                    <strong>VENUE:</strong> <span>PUP GYMNASIUM</span>
-                </p>
-                <p>This is a paragraph content section where other things will enter here.</p>
-                <button class="w-100">Read Now</button>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-            <div class="article-card" data-category="news" data-month="February" data-year="2024">
-                <div class="position-relative">
-                    <img src="blank.jpg" alt="Article image" class="img-fluid rounded mb-3">
-                    <div class="event-badge p-1">UPCOMING EVENT</div> 
-                </div>
-                <h3>TITLE SPACE</h3>
-                <p class="card-text">
-                    <strong>DATE:</strong> <span>JULY 15, 2025</span><br>
-                    <strong>TIME:</strong> <span>9:00AM - 5:00 PM</span><br>
-                    <strong>VENUE:</strong> <span>PUP GYMNASIUM</span>
-                </p>
-                <p>This is a paragraph content section where other things will enter here.</p>
-                <button class="w-100">Read Now</button>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-            <div class="article-card" data-category="news" data-month="February" data-year="2024">
-                <div class="position-relative">
-                    <img src="blank.jpg" alt="Article image" class="img-fluid rounded mb-3">
-                    <div class="event-badge p-1">UPCOMING EVENT</div> 
-                </div>
-                <h3>TITLE SPACE</h3>
-                <p class="card-text">
-                    <strong>DATE:</strong> <span>JULY 15, 2025</span><br>
-                    <strong>TIME:</strong> <span>9:00AM - 5:00 PM</span><br>
-                    <strong>VENUE:</strong> <span>PUP GYMNASIUM</span>
-                </p>
-                <p>This is a paragraph content section where other things will enter here.</p>
-                <button class="w-100">Read Now</button>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-            <div class="article-card" data-category="news" data-month="February" data-year="2024">
-                <div class="position-relative">
-                    <img src="blank.jpg" alt="Article image" class="img-fluid rounded mb-3">
-                    <div class="event-badge p-1">UPCOMING EVENT</div> 
-                </div>
-                <h3>TITLE SPACE</h3>
-                <p class="card-text">
-                    <strong>DATE:</strong> <span>JULY 15, 2025</span><br>
-                    <strong>TIME:</strong> <span>9:00AM - 5:00 PM</span><br>
-                    <strong>VENUE:</strong> <span>PUP GYMNASIUM</span>
-                </p>
-                <p>This is a paragraph content section where other things will enter here.</p>
-                <button class="w-100">Read Now</button>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-            <div class="article-card" data-category="news" data-month="February" data-year="2024">
-                <div class="position-relative">
-                    <img src="blank.jpg" alt="Article image" class="img-fluid rounded mb-3">
-                    <div class="event-badge p-1">UPCOMING EVENT</div> 
-                </div>
-                <h3>TITLE SPACE</h3>
-                <p class="card-text">
-                    <strong>DATE:</strong> <span>JULY 15, 2025</span><br>
-                    <strong>TIME:</strong> <span>9:00AM - 5:00 PM</span><br>
-                    <strong>VENUE:</strong> <span>PUP GYMNASIUM</span>
-                </p>
-                <p>This is a paragraph content section where other things will enter here.</p>
-                <button class="w-100">Read Now</button>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-            <div class="article-card" data-category="news" data-month="February" data-year="2024">
-                <div class="position-relative">
-                    <img src="blank.jpg" alt="Article image" class="img-fluid rounded mb-3">
-                    <div class="event-badge p-1">UPCOMING EVENT</div> 
-                </div>
-                <h3>TITLE SPACE</h3>
-                <p class="card-text">
-                    <strong>DATE:</strong> <span>JULY 15, 2025</span><br>
-                    <strong>TIME:</strong> <span>9:00AM - 5:00 PM</span><br>
-                    <strong>VENUE:</strong> <span>PUP GYMNASIUM</span>
-                </p>
-                <p>This is a paragraph content section where other things will enter here.</p>
-                <button class="w-100">Read Now</button>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-            <div class="article-card" data-category="news" data-month="February" data-year="2024">
-                <div class="position-relative">
-                    <img src="blank.jpg" alt="Article image" class="img-fluid rounded mb-3">
-                    <div class="event-badge p-1">UPCOMING EVENT</div> 
-                </div>
-                <h3>TITLE SPACE</h3>
-                <p class="card-text">
-                    <strong>DATE:</strong> <span>JULY 15, 2025</span><br>
-                    <strong>TIME:</strong> <span>9:00AM - 5:00 PM</span><br>
-                    <strong>VENUE:</strong> <span>PUP GYMNASIUM</span>
-                </p>
-                <p>This is a paragraph content section where other things will enter here.</p>
-                <button class="w-100">Read Now</button>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-            <div class="article-card" data-category="news" data-month="February" data-year="2024">
-                <div class="position-relative">
-                    <img src="blank.jpg" alt="Article image" class="img-fluid rounded mb-3">
-                    <div class="event-badge p-1">UPCOMING EVENT</div> 
-                </div>
-                <h3>TITLE SPACE</h3>
-                <p class="card-text">
-                    <strong>DATE:</strong> <span>JULY 15, 2025</span><br>
-                    <strong>TIME:</strong> <span>9:00AM - 5:00 PM</span><br>
-                    <strong>VENUE:</strong> <span>PUP GYMNASIUM</span>
-                </p>
-                <p>This is a paragraph content section where other things will enter here.</p>
-                <button class="w-100">Read Now</button>
-            </div>
-        </div>
+    <section class="row event-cards" id="event-cards-container">
+        
     </section>
 </main>
     <!-- Assistive Touch Button -->

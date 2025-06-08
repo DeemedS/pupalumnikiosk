@@ -8,7 +8,7 @@ function fetchJobs(page = 1) {
     if (isLoading || !hasNextPage) return;
 
     isLoading = true;
-    fetch(`http://127.0.0.1:8000/api/filtered-jobposts/?page_size=${pageSize}&page=${page}`)
+    fetch(`http://127.0.0.1:8000/api/filtered-jobposts/?page_size=${pageSize}&page=${page}&is_active=true`)
         .then(response => response.json())
         .then(data => {
             if (data.results.length === 0) {
