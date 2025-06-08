@@ -38,7 +38,7 @@ function displayJobs(newJobs) {
         jobItem.innerHTML = `
             <h6 class="fw-bold text-danger">${job.title}</h6>
             <p class="mb-1">${job.company}</p>
-            <p class="text-muted small">${job.description}</p>
+            <p class="text-muted small job-desc">${job.description}</p>
             <p class="text-muted small">${job.location}</p>
         `;
 
